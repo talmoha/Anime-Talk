@@ -44,17 +44,42 @@
                     <div class="col-md-5" style="margin-top: -100px;" id="changing_gif"><img class="card-img-top mb-5 mb-md-0" src="assets/gif/shoto.gif" alt="..." /></div>
                     <div class="col-md-6">
                         <h1 class="display-5 fw-bolder">Shoto</h1>
-                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium at dolorem quidem modi. Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea iste laborum vero?</p>
-                        <div class="d-flex">
-                                <button class="btn btn-outline-dark flex-shrink-0" type="button">
-                                hey
-                                </button>
-                                <button class="btn btn-outline-dark flex-shrink-0" type="button">
-                                how are you?
-                                </button>
-                                <button class="btn btn-outline-dark flex-shrink-0" type="button">
-                                can you give me advice?
-                                </button>
+                        <!-- chat bar-->
+                        <div class="chat-bar-collapsible">
+                            <button class="collapsible">Chat with Shoto</button>
+                                <div class="content">
+                                    <div class="full-chat-block">
+                                        <!--message container-->
+                                        <div class="outer-container">
+                                            <div class="chat-container">
+                                                <!--messages-->
+                                                <div id="chatbox">
+                                                    <p id="botStarterMessage" class="botText"><span>Loading...</span></span></p>
+                                                </div>
+    
+                                                <!--user input-->
+                                                <div class="chat-bar-input-block">
+                                                    <div id="userInput">
+                                                        <input type="text" id="textInput" class="input-box" name="msg" placeholder="Tap 'Enter' to send a message">
+                                                        <p></p> 
+                                                    </div>
+    
+                                                    <div class="chat-bar-icons">
+                                                        <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send" onclick="sendButton()"></i>
+                                                    </div>
+                                                </div>
+    
+                                                <div id="chat-bar-bottom">
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex py-5">
+                                <p class="lead">Send Shoto things like "hey" "what's your dream?" "can I tell you a joke?"</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -62,7 +87,7 @@
         </section>
         <!-- Footer-->
         <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p></div>
+            <div class="container"><p class="m-0 text-center text-white"> &copy; Anime Talk 2021</p></div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
